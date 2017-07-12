@@ -1,0 +1,44 @@
+/****use-import-color-properties****/
+/****use-Mixin-border-radius****/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f5f5; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 992px;
+  margin: 12px auto;
+  background-color: #fff;
+  padding: 15px 0; }
+
+p, section {
+  margin: 0 auto;
+  color: #060505; }
+
+section {
+  /****use-of-extend-p-element****/ }
+  section div {
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; }
+  section .div-box-one {
+    background-color: #bdf58c;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; }
+  section .div-box-two {
+    background-color: #b8f5ed;
+    border-radius: 15px;
+    -webkit-border-radius: 15px; }
+  section .div-box-three {
+    background-color: #f59985;
+    border-radius: 0px;
+    -webkit-border-radius: 0px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+
+/****use-import-color-properties****/
+
+@import "colors";
+
+/****use-Mixin-border-radius****/
+
+@mixin border-radius($radius){
+  border-radius:$radius ;
+  -webkit-border-radius:$radius;
+}
+
+body{margin: 0;padding: 0;background-color: #f9f5f5;}
+
+a{text-decoration: none;}
+
+.container{width: 992px;margin: 12px auto;background-color: #fff;padding: 15px 0}
+
+p{margin: 0 auto; color:#060505;}
+
+section{
+
+  /****use-of-extend-p-element****/
+
+  @extend p;
+
+  div{
+    width: 500px;height: 150px;margin: 0 auto;border: 1px solid #000;margin-bottom: 10px;display: flex;align-items: center;
+  }
+  .div-box-one{background-color: $primaryColor;@include border-radius(5px);}
+  .div-box-two{background-color: $secondaryColor;@include border-radius(15px);}
+  .div-box-three{background-color: $thirdColor;@include border-radius(0px);}
+}
